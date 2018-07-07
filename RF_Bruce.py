@@ -71,8 +71,8 @@ Concrete.head()
 # tt=list(train.columns.values)
 #==============================================================================
 
-train_x = train.iloc[:,:8]
-train_y, _= pd.factorize(train['Concrete compressive strength(MPa, megapascals) '])
+train_x_yz = train.iloc[:,:8]
+train_y_ss, _= pd.factorize(train['Concrete compressive strength(MPa, megapascals) '])
 
 clf = RandomForestClassifier(n_jobs=2)
 
